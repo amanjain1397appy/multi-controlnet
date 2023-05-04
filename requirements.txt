@@ -1,0 +1,8 @@
+sanic==22.6.2
+git+https://github.com/huggingface/diffusers
+transformers
+xformers==0.0.16
+git+https://github.com/huggingface/accelerate
+triton==2.0.0.post1
+timm
+websockets==10.0
