@@ -1,2 +1,2 @@
 sudo docker build -t control-depth .
-docker run -it -p 8000:8000 --gpus all control-depth
+docker run -it -d -p 8015:8000 --gpus all control-depth

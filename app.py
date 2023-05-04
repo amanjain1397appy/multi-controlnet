@@ -96,7 +96,7 @@ def inference(model_inputs:dict) -> dict:
             num_inference_steps=int(num_inference_steps),
             height = height,
             width = width,
-            controlnet_conditioning_scale = [0.4, 0.6],
+            controlnet_conditioning_scale = noise,
             guidance_scale = guidance_scale
         )
 
