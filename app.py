@@ -24,7 +24,7 @@ def init():
     controlnet_canny = ControlNetModel.from_pretrained("lllyasviel/sd-controlnet-canny", torch_dtype=torch.float16)
 
     model = StableDiffusionControlNetPipeline.from_pretrained(
-        "dreamlike-art/dreamlike-photoreal-2.0", controlnet=[controlnet_depth, controlnet_canny], safety_checker=None, torch_dtype=torch.float16
+        "Lykon/DreamShaper", controlnet=[controlnet_depth, controlnet_canny], safety_checker=None, torch_dtype=torch.float16
     ).to("cuda")
     print("Time to load controlnet: ", time.time() - timestart)
 
