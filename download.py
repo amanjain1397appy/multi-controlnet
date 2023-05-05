@@ -17,7 +17,7 @@ def download_model():
     #     "runwayml/stable-diffusion-v1-5", controlnet=controlnet, safety_checker=None, torch_dtype=torch.float16
     # )
     model = StableDiffusionControlNetPipeline.from_pretrained(
-        "Lykon/DreamShaper", controlnet=[controlnet_depth, controlnet_canny], safety_checker=None, torch_dtype=torch.float16
+        "dreamlike-art/dreamlike-photoreal-2.0", controlnet=[controlnet_depth, controlnet_canny], safety_checker=None, torch_dtype=torch.float16
     )
     
 
