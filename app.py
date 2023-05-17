@@ -105,6 +105,9 @@ def inference(model_inputs:dict) -> dict:
     image.save(buffered,format="JPEG")
     image_base64 = base64.b64encode(buffered.getvalue()).decode('utf-8')
 
+    #Clear cache memory
+    torch.cuda.empty_cache()
+
     print("Time to run ControlNet: ", time.time() - timestart)
     # Return the results as a dictionary
     return {
